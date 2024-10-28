@@ -45,6 +45,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Get_started',
           path: '/getStarted',
           builder: (context, params) => const GetStartedWidget(),
+        ),
+        FFRoute(
+          name: 'sign_up_form',
+          path: '/signUpForm',
+          builder: (context, params) => const SignUpFormWidget(),
+        ),
+        FFRoute(
+          name: 'Main_Page',
+          path: '/mainPage',
+          builder: (context, params) => const MainPageWidget(),
+        ),
+        FFRoute(
+          name: 'Main',
+          path: '/main',
+          builder: (context, params) => const MainWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

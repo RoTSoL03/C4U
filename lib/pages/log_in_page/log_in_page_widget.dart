@@ -227,6 +227,10 @@ class _LogInPageWidgetState extends State<LogInPageWidget>
                                                       .labelMedium
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
@@ -315,6 +319,10 @@ class _LogInPageWidgetState extends State<LogInPageWidget>
                                                       .labelMedium
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        color:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primaryText,
                                                         letterSpacing: 0.0,
                                                       ),
                                               enabledBorder: OutlineInputBorder(
@@ -379,7 +387,7 @@ class _LogInPageWidgetState extends State<LogInPageWidget>
                                                           .visibility_off_outlined,
                                                   color: FlutterFlowTheme.of(
                                                           context)
-                                                      .secondaryText,
+                                                      .primaryText,
                                                   size: 24.0,
                                                 ),
                                               ),

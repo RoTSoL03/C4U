@@ -167,6 +167,16 @@ class _GetStartedWidgetState extends State<GetStartedWidget>
                     ),
                   ),
                 ),
+              Align(
+                alignment: const AlignmentDirectional(0.0, 0.76),
+                child: Text(
+                  'Already a chorer?',
+                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                        fontFamily: 'Inter',
+                        letterSpacing: 0.0,
+                      ),
+                ),
+              ),
             ],
           ).animateOnPageLoad(animationsMap['stackOnPageLoadAnimation']!),
         ),
