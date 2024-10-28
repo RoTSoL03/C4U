@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:chores4_u/pages/get_started/get_started_widget.dart';
+import 'package:chores4_u/pages/log_in_page/log_in_page_widget.dart';
+//import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatefulWidget {
   @override
   State<MyApp> createState() => _MyAppState();
 
+  // ignore: library_private_types_in_public_api
   static _MyAppState of(BuildContext context) =>
       context.findAncestorStateOfType<_MyAppState>()!;
 }
@@ -44,10 +46,10 @@ class _MyAppState extends State<MyApp> {
         _themeMode = mode;
         FlutterFlowTheme.saveThemeMode(mode);
       });
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
+    /* return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
       title: 'Chores4U',
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
@@ -64,7 +66,14 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: false,
       ),
       themeMode: _themeMode,
-      routerConfig: _router,
+      routerConfig: _router, 
+    );*/
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: const GetStartedWidget(),
+      routes: {
+        '/login_page': (context) => const LogInPageWidget(),
+      },
     );
   }
 }
