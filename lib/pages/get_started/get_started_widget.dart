@@ -116,16 +116,15 @@ class _GetStartedWidgetState extends State<GetStartedWidget>
                 alignment: const AlignmentDirectional(0.0, 0.89),
                 child: FFButtonWidget(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/login_page');
                     print('Button pressed ...');
                   },
                   text: 'Log In',
                   options: FFButtonOptions(
                     height: 40.0,
-                    padding: const EdgeInsetsDirectional.fromSTEB(
-                        16.0, 0.0, 16.0, 0.0),
-                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                        0.0, 0.0, 0.0, 0.0),
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    iconPadding:
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: const Color(0xFFFFC926),
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily: 'Inter Tight',
@@ -152,10 +151,10 @@ class _GetStartedWidgetState extends State<GetStartedWidget>
                     options: FFButtonOptions(
                       width: 200.0,
                       height: 78.0,
-                      padding: const EdgeInsetsDirectional.fromSTEB(
-                          16.0, 0.0, 16.0, 0.0),
-                      iconPadding: const EdgeInsetsDirectional.fromSTEB(
-                          0.0, 0.0, 0.0, 0.0),
+                      padding:
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                      iconPadding:
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: const Color(0xFF003166),
                       textStyle:
                           FlutterFlowTheme.of(context).titleLarge.override(
