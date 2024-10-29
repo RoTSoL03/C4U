@@ -49,7 +49,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'sign_up_form',
           path: '/signUpForm',
-          builder: (context, params) => const SignUpFormWidget(),
+          builder: (context, params) => SignUpFormWidget(
+            title: params.getParam(
+              'title',
+              ParamType.bool,
+            ),
+          ),
         ),
         FFRoute(
           name: 'Main_Page',
