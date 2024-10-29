@@ -121,8 +121,8 @@ class _LogInPageWidgetState extends State<LogInPageWidget>
                                 child: Stack(
                                   children: [
                                     Align(
-                                      alignment:
-                                          const AlignmentDirectional(0.0, -0.95),
+                                      alignment: const AlignmentDirectional(
+                                          0.0, -0.95),
                                       child: Text(
                                         'LOGIN',
                                         textAlign: TextAlign.justify,
@@ -182,12 +182,11 @@ class _LogInPageWidgetState extends State<LogInPageWidget>
                                         text: 'Login',
                                         options: FFButtonOptions(
                                           height: 40.0,
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 0.0),
+                                          padding: const EdgeInsetsDirectional
+                                              .fromSTEB(16.0, 0.0, 16.0, 0.0),
                                           iconPadding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 0.0, 0.0),
+                                              const EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 0.0, 0.0, 0.0),
                                           color: const Color(0xFF013166),
                                           textStyle:
                                               FlutterFlowTheme.of(context)
@@ -204,11 +203,11 @@ class _LogInPageWidgetState extends State<LogInPageWidget>
                                       ),
                                     ),
                                     Align(
-                                      alignment:
-                                          const AlignmentDirectional(0.0, -0.56),
+                                      alignment: const AlignmentDirectional(
+                                          0.0, -0.56),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 16.0),
+                                        padding: const EdgeInsetsDirectional
+                                            .fromSTEB(0.0, 0.0, 0.0, 16.0),
                                         child: SizedBox(
                                           width: double.infinity,
                                           child: TextFormField(
@@ -275,7 +274,8 @@ class _LogInPageWidgetState extends State<LogInPageWidget>
                                                     BorderRadius.circular(12.0),
                                               ),
                                               filled: true,
-                                              fillColor: const Color(0xFFC0D1DF),
+                                              fillColor:
+                                                  const Color(0xFFC0D1DF),
                                               contentPadding:
                                                   const EdgeInsets.all(24.0),
                                             ),
@@ -296,10 +296,11 @@ class _LogInPageWidgetState extends State<LogInPageWidget>
                                       ),
                                     ),
                                     Align(
-                                      alignment: const AlignmentDirectional(0.0, 0.0),
+                                      alignment:
+                                          const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 16.0),
+                                        padding: const EdgeInsetsDirectional
+                                            .fromSTEB(0.0, 0.0, 0.0, 16.0),
                                         child: SizedBox(
                                           width: double.infinity,
                                           child: TextFormField(
@@ -367,7 +368,8 @@ class _LogInPageWidgetState extends State<LogInPageWidget>
                                                     BorderRadius.circular(12.0),
                                               ),
                                               filled: true,
-                                              fillColor: const Color(0xFFC0D1DF),
+                                              fillColor:
+                                                  const Color(0xFFC0D1DF),
                                               contentPadding:
                                                   const EdgeInsets.all(24.0),
                                               suffixIcon: InkWell(
