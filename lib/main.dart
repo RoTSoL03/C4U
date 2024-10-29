@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:chores4_u/pages/get_started/get_started_widget.dart';
 import 'package:chores4_u/pages/log_in_page/log_in_page_widget.dart';
-//import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
@@ -48,7 +48,7 @@ class _MyAppState extends State<MyApp> {
       });
   @override
   Widget build(BuildContext context) {
-    /* return MaterialApp.router(
+    MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Chores4U',
       localizationsDelegates: const [
@@ -66,8 +66,9 @@ class _MyAppState extends State<MyApp> {
         useMaterial3: false,
       ),
       themeMode: _themeMode,
-      routerConfig: _router, 
-    );*/
+      routerConfig: _router,
+    );
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: const GetStartedWidget(),
