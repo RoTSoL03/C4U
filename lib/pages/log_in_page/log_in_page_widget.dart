@@ -63,7 +63,7 @@ class _LogInPageWidgetState extends State<LogInPageWidget>
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: const Color(0xFFFFF9EE),
+        backgroundColor: Colors.white,
         body: SafeArea(
           top: true,
           child: Container(
@@ -86,7 +86,7 @@ class _LogInPageWidgetState extends State<LogInPageWidget>
                           width: 395.0,
                           height: 282.0,
                           decoration: const BoxDecoration(
-                            color: Color(0xFFFFF9EE),
+                            color: Colors.white,
                           ),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(8.0),
@@ -105,7 +105,7 @@ class _LogInPageWidgetState extends State<LogInPageWidget>
                           width: 274.0,
                           height: 353.0,
                           decoration: BoxDecoration(
-                            color: const Color(0xFFFFF9EE),
+                            color: Colors.white,
                             boxShadow: const [
                               BoxShadow(
                                 blurRadius: 10.0,
