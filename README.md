@@ -1,6 +1,6 @@
 # Chores4U
 
-A small project for the PITCH UP 2024-2025 solutions.
+A new Flutter project.
 
 ## Getting Started
 

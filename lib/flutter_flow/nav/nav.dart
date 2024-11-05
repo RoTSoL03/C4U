@@ -38,7 +38,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         ),
         FFRoute(
           name: 'Log-in_Page',
-          path: '/logInPage',
+          path: '//login_page',
           builder: (context, params) => const LogInPageWidget(),
         ),
         FFRoute(

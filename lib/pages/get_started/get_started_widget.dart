@@ -57,7 +57,7 @@ class _GetStartedWidgetState extends State<GetStartedWidget>
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: const Color(0xFFFFF9EE),
+        backgroundColor: const Color(0xFFFDFDFD),
         body: SafeArea(
           top: true,
           child: Stack(
@@ -74,7 +74,7 @@ class _GetStartedWidgetState extends State<GetStartedWidget>
                     width: 395.0,
                     height: 412.0,
                     decoration: const BoxDecoration(
-                      color: Color(0xFFFFF9EE),
+                      color: Colors.white,
                     ),
                     alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Stack(
@@ -159,7 +159,8 @@ class _GetStartedWidgetState extends State<GetStartedWidget>
                       textStyle:
                           FlutterFlowTheme.of(context).titleLarge.override(
                                 fontFamily: 'Inter Tight',
-                                color: const Color(0xFFFFC926),
+                                color: FlutterFlowTheme.of(context)
+                                    .secondaryBackground,
                                 letterSpacing: 0.0,
                               ),
                       elevation: 0.0,
@@ -176,6 +177,10 @@ class _GetStartedWidgetState extends State<GetStartedWidget>
                         letterSpacing: 0.0,
                       ),
                 ),
+              ),
+              const Column(
+                mainAxisSize: MainAxisSize.max,
+                children: [],
               ),
             ],
           ).animateOnPageLoad(animationsMap['stackOnPageLoadAnimation']!),
