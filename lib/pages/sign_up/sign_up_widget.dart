@@ -2,11 +2,11 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'sign_up_form_model.dart';
-export 'sign_up_form_model.dart';
+import 'sign_up_model.dart';
+export 'sign_up_model.dart';
 
-class SignUpFormWidget extends StatefulWidget {
-  const SignUpFormWidget({
+class SignUpWidget extends StatefulWidget {
+  const SignUpWidget({
     super.key,
     bool? title,
   }) : title = title ?? false;
@@ -14,18 +14,18 @@ class SignUpFormWidget extends StatefulWidget {
   final bool title;
 
   @override
-  State<SignUpFormWidget> createState() => _SignUpFormWidgetState();
+  State<SignUpWidget> createState() => _SignUpWidgetState();
 }
 
-class _SignUpFormWidgetState extends State<SignUpFormWidget> {
-  late SignUpFormModel _model;
+class _SignUpWidgetState extends State<SignUpWidget> {
+  late SignUpModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => SignUpFormModel());
+    _model = createModel(context, () => SignUpModel());
 
     _model.textController1 ??= TextEditingController();
     _model.textFieldFocusNode1 ??= FocusNode();
@@ -93,7 +93,7 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
                     width: 285.0,
                     height: 480.0,
                     decoration: BoxDecoration(
-                      color: const Color(0xFFFFF9EE),
+                      color: Colors.white,
                       borderRadius: BorderRadius.circular(24.0),
                       shape: BoxShape.rectangle,
                     ),
@@ -113,7 +113,7 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .headlineSmall
                                     .override(
-                                      fontFamily: 'Inter Tight',
+                                      fontFamily: 'Raleway',
                                       color: const Color(0xFF013166),
                                       letterSpacing: 0.0,
                                       lineHeight: 1.5,
@@ -131,7 +131,7 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
                                 child: TextFormField(
                                   controller: _model.textController1,
                                   focusNode: _model.textFieldFocusNode1,
-                                  autofocus: true,
+                                  autofocus: false,
                                   autofillHints: const [AutofillHints.email],
                                   obscureText: false,
                                   decoration: InputDecoration(
@@ -183,7 +183,7 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Inter',
+                                        fontFamily: 'Raleway',
                                         color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
@@ -204,7 +204,7 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
                                 child: TextFormField(
                                   controller: _model.textController2,
                                   focusNode: _model.textFieldFocusNode2,
-                                  autofocus: true,
+                                  autofocus: false,
                                   autofillHints: const [AutofillHints.email],
                                   obscureText: false,
                                   decoration: InputDecoration(
@@ -256,7 +256,7 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Inter',
+                                        fontFamily: 'Raleway',
                                         color: Colors.black,
                                         letterSpacing: 0.0,
                                       ),
@@ -344,7 +344,7 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Inter',
+                                        fontFamily: 'Raleway',
                                         letterSpacing: 0.0,
                                       ),
                                   validator: _model.textController3Validator
@@ -430,7 +430,7 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Inter',
+                                        fontFamily: 'Raleway',
                                         letterSpacing: 0.0,
                                       ),
                                   validator: _model.textController4Validator
@@ -456,7 +456,7 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
                                     .override(
-                                      fontFamily: 'Inter Tight',
+                                      fontFamily: 'Raleway',
                                       color: Colors.white,
                                       letterSpacing: 0.0,
                                     ),
@@ -478,7 +478,16 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
                   children: [
                     FFButtonWidget(
                       onPressed: () async {
-                        context.pushNamed('Get_started');
+                        context.pushNamed(
+                          'Get_Started',
+                          extra: <String, dynamic>{
+                            kTransitionInfoKey: const TransitionInfo(
+                              hasTransition: true,
+                              transitionType: PageTransitionType.fade,
+                              duration: Duration(milliseconds: 0),
+                            ),
+                          },
+                        );
                       },
                       text: '',
                       icon: const Icon(

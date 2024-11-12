@@ -29,27 +29,27 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => const LogInPageWidget(),
+      errorBuilder: (context, state) => const LogInWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => const LogInPageWidget(),
+          builder: (context, _) => const LogInWidget(),
         ),
         FFRoute(
-          name: 'Log-in_Page',
+          name: 'Log_in',
           path: '//login_page',
-          builder: (context, params) => const LogInPageWidget(),
+          builder: (context, params) => const LogInWidget(),
         ),
         FFRoute(
-          name: 'Get_started',
+          name: 'Get_Started',
           path: '/getStarted',
           builder: (context, params) => const GetStartedWidget(),
         ),
         FFRoute(
-          name: 'sign_up_form',
-          path: '/signUpForm',
-          builder: (context, params) => SignUpFormWidget(
+          name: 'Sign_Up',
+          path: '/signUp',
+          builder: (context, params) => SignUpWidget(
             title: params.getParam(
               'title',
               ParamType.bool,
@@ -57,14 +57,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           ),
         ),
         FFRoute(
-          name: 'Main_Page',
-          path: '/mainPage',
-          builder: (context, params) => const MainPageWidget(),
-        ),
-        FFRoute(
-          name: 'Main',
-          path: '/main',
-          builder: (context, params) => const MainWidget(),
+          name: 'Landing',
+          path: '/landing',
+          builder: (context, params) => const LandingWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
